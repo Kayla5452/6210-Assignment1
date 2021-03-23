@@ -5,9 +5,9 @@ import scpData from "./scpdata.json";
 const scp = scpData.map(
     (scpData) => {
         return(
-            <div className="card mt-2 mb-2">
+            <div className="card mt-2 mb-2 bg-dark text-light">
                 <h1 className="card-header">{scpData.scpItem[2].scpNumber}</h1>
-                <div className="card-body">
+                <div className="card-body bg-light text-dark">
                     <h2 className="card-title">Item #{scpData.scpItem[2].scpNumber}</h2>
                     <h3>Object Class: {scpData.scpItem[2].scpObjectClass}</h3>
                     <h4>Special Contrainment Procedures</h4>
