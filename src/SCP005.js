@@ -14,6 +14,7 @@ const scp = scpData.map(
                     <p className="card-text">{scpData.scpItem[3].scpSCP}</p>
                     <h4>Description</h4>
                     <p className="card-text">{scpData.scpItem[3].scpDescription}</p>
+                    <img className="small-image" src={scpData.scpItem[3].image}/>
                 </div>
             </div>
         );

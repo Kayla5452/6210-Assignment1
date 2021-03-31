@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Route, NavLink, HashRouter } from "react-router-dom";
 import scpData from "./scpdata.json";
+import "./index.css";
 
 const scp = scpData.map(
     (scpData) => {
@@ -14,6 +15,7 @@ const scp = scpData.map(
                     <p className="card-text">{scpData.scpItem[0].scpSCP.map((item) =>{return <p>{item}</p>})}</p>
                     <h4>Description</h4>
                     <p className="card-text">{scpData.scpItem[0].scpDescription.map((item) =>{return <p>{item}</p>})}</p>
+                    <img className="big-image" src={scpData.scpItem[0].image}/>
                 </div>
             </div>
         );
